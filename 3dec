@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+  
+  <script src="dist/js/material.js"></script>
+    <script src="dist/js/material.min.js"></script>
+	  <script src="dist/js/ripples.js"></script>
+	    <script src="dist/js/ripples.min.js"></script>
+
+  <!-- Dropdown.js -->
+  <link href="http://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+  <!-- Page style -->
+  <link href="index.css" rel="stylesheet">
+  <link href="compare.css" rel="stylesheet">
+  
+  <!-- jquery ui -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  
+</head>
+
+<body>
+
+<div class="bs-component">
+          <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+            <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Mobile
+			   <img class="tab-icons" src="http://www.freeiconspng.com/uploads/image--mobile-icon--risk-of-rain-wiki--wikia-3.png"></img>			
+			   <div class="ripple-container"></div></a></li>
+			   
+            <li class=""><a href="#tablets" data-toggle="tab" aria-expanded="false">Tablets
+			<img class="tab-icons" src="http://simpleicon.com/wp-content/uploads/tablet-1.png"></img>			<div class="ripple-container"></div></a></li>
+			
+			
+            <li class="hidden-xs"><a href="#laptops" data-toggle="tab" aria-expanded="false">Laptops
+			<img class="tab-icons" src="http://www.freeiconspng.com/uploads/laptop-icon-24.png"></img>		
+			<div class="ripple-container"></div></a></li>
+			
+			
+			  <li class="hidden-xs"><a href="#camera" data-toggle="tab" aria-expanded="false">Camera
+			  <img class="tab-icons" src="http://www.freeiconspng.com/uploads/camera-icon-21.png"></img>		
+			  <div class="ripple-container"></div></a></li>
+			  
+			  
+            <li class="dropdown hidden-md hidden-lg hidden-sm">
+              <a class="dropdown-toggle" data-toggle="dropdown"  data-target="#" aria-expanded="false">
+                Other <span class="caret"></span>
+              <div class="ripple-container"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">Laptops</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2" data-toggle="tab">Camera</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade  active in" id="home">
+              <div class="tab-heading">Compare <span class="hidden-xs"> Mobile Phones </span> 
+			  <a class="btn btn-info addSearch"><span class="hidden-xs">Add Device </span><span class="glyphicon glyphicon-plus"></span></a>
+			  <a class="btn btn-info removeSearch"><span class="hidden-xs">Remove Device </span><span class="glyphicon glyphicon-minus"></span></a>
+			  </div>
+			  
+			    <div class="search-box">
+				
+
+
+				<div class="">
+				 <div class="col-xs-12  col-sm-6 col-md-3 box1">
+						<div class="form-group label-floating row">
+							<label class="control-label" for="mobile_device_1">Search Device</label>
+							<input class="form-control md" id="mobile_device_1" type="text">
+				     </div>		
+				</div>	 
+				
+				<div class="col-xs-12 col-sm-6 col-md-3 box2">
+						<div class="form-group label-floating row">
+							<label class="control-label" for="mobile_device_2">Search Device</label>
+							<input class="form-control md" id="mobile_device_2" type="text">
+						</div>							
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-3 box3">
+						<div class="form-group label-floating row">
+							<label class="control-label" for="mobile_device_3">Search Device</label>
+							<input class="form-control md" id="mobile_device_3" type="text">
+						</div>							
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3 box4">
+						<div class="form-group label-floating row">
+							<label class="control-label" for="mobile_device_4">Search Device</label>
+							<input class="form-control md" id="mobile_device_4" type="text">
+						</div>							
+				</div>				
+				</div>
+				
+				<div class="col-xs-12 text-center" id="compare_mobile"><a  class="btn btn-raised btn-primary btn-lg">Compare</a></div>
+				
+				 </div>
+				 
+				 
+            </div>
+            <div class="tab-pane fade " id="tablets">
+              <div class="tab-heading">Compare Tablets</div>
+            </div>
+            <div class="tab-pane fade" id="laptops">
+                <div class="tab-heading">Compare Laptops</div>
+            </div>
+            <div class="tab-pane fade" id="camera">
+					<div class="tab-heading">Compare Camera</div>
+            </div>
+          </div> <!-- tab content -->	  
+		  
+</div>
+
+		  <div class="mobile_comp_table">
+				<div class="comp_div_heading">Comparing <span class=" comparing_what"></span></div>
+		  </div>
+
+</body>
+<script>
+$(document).ready(function(){
+$.material.init();
+
+  mobilesNames  = ['iPhone4','iPhone5','iPhone6'];
+
+        /*              var  iPhone4 =  'http://blurbomat.com/wordpress/wp-content/uploads/2010/06/100607-iphone4.png';
+					  var  iPhone5  = 'http://www-scf.usc.edu/~kieranre/itp104/img/iphone5.png';
+                      var  iPhone6   = 'http://www.spieldochmit.net/AU/iphone6.png';  */
+					  
+					  var iPhone4 = 'img/iphone4.png';
+					  var iPhone5 = 'img/iphone5.png';
+					  var iPhone6 = 'img/iphone6.png';
+                      
+  
+
+$('#mobile_device_1').autocomplete({source: mobilesNames }).autocomplete( "instance" )._renderItem = function( ul, item ) {
+var kk = eval(item.label);
+        return $( "<li></li>" )
+            .data( "item.autocomplete", item )
+            .append( "<a>" + "<img class='autoImages'  src='" + kk + "'/>"  + item.label+ "</a>" )
+            .appendTo(ul);
+  };
+	
+$('#mobile_device_2').autocomplete({source: mobilesNames }).autocomplete( "instance" )._renderItem = function( ul, item ) {
+var kk = eval(item.label);
+        return $( "<li class='liw'></li>" )
+            .data( "item.autocomplete", item )
+            .append( "<a class='lia'>" + "<img class='autoImages'  src='" + kk + "'/>"  + item.label+ "</a>" )
+            .appendTo(ul);
+  };
+
+$('#mobile_device_3').autocomplete({source: mobilesNames }).autocomplete( "instance" )._renderItem = function( ul, item ) {
+var kk = eval(item.label);
+        return $( "<li class='liw'></li>" )
+            .data( "item.autocomplete", item )
+            .append( "<a class='lia'>" + "<img class='autoImages'  src='" + kk + "'/>"  + item.label+ "</a>" )
+            .appendTo(ul);
+  };	
+
+$('#mobile_device_4').autocomplete({source: mobilesNames }).autocomplete( "instance" )._renderItem = function( ul, item ) {
+var kk = eval(item.label);
+        return $( "<li class='liw'></li>" )
+            .data( "item.autocomplete", item )
+            .append( "<a class='lia'>" + "<img class='autoImages'  src='" + kk + "'/>"  + item.label+ "</a>" )
+            .appendTo(ul);
+  };	  
+  
+ $('.addSearch').click(function(e){
+ $('.removeSearch').fadeIn('slow');
+ if(!($('.box3').hasClass('visible'))){
+		$('.box3').fadeIn('slow');
+		$('.box3').addClass('visible');
+ }
+ else{
+		 $('.addSearch').css('visibility','hidden');
+ 		$('.box4').fadeIn('slow');
+		$('.box4').addClass('visible');
+ }
+ e.preventDefault();
+ }); 
+
+ $('.removeSearch').click(function(e){
+ $('.addSearch').css('visibility','visible');
+ if($('.box4').hasClass('visible')){
+ $('.box4').removeClass('visible');
+ $('.box4').fadeOut('slow');
+ $('#mobile_device_4').val('');
+ }
+ else {
+ $('.box3').removeClass('visible');
+ $('.box3').fadeOut('slow');
+ $('#mobile_device_3').val('');
+ $('.removeSearch').fadeOut('slow');
+ }
+ e.preventDefault();
+ });
+ var searchArray = [];
+ 
+ $('#compare_mobile').click(function(){
+ searchArray = [];
+ $('[id^=mobile_device_]').each(function(){
+ if($(this).val()  !=  ''){
+searchArray.push($(this).val());
+}
+});
+$('.comparing_what').text('');
+$('#mobile_comp_data').remove();
+$('.comp_div_heading').fadeIn('slideDown');
+ $('.mobile_comp_table').append('<table id="mobile_comp_data">'+
+ '<thead><tr>'+
+ '</tr></thead>'+
+ '<tbody><tr><td>hello1</td><td>hello2</td></tr></tbody>'+
+ '</table>');
+ 
+for(i=0;i<=searchArray.length-1;i++){
+if(i != 0  ){
+$('.comparing_what').append( ' <span class="vs_mobile"> vs </span>');
+}
+$('.comparing_what').append(searchArray[i]);
+
+$('thead>tr').append('<th>'+searchArray[i]+'</th>');
+} 
+ 
+
+ 
+
+ 
+ });
+
+});
+</script>
+</html>

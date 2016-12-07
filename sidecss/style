@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:500);
+.stickSide{
+height:80px;
+}
 body {
   width: 100%;
   margin: 0;
